@@ -62,7 +62,7 @@ module.exports = (robot) ->
 
       # nothing was replaced, regex didn't match
       if ( replaceText == origText ) 
-        msg.send("#{username}: There is no substitute for trying")
+        msg.send("#{username}: Hmm, that didn't match your last message.")
 
       # display new text
       else
@@ -101,7 +101,7 @@ module.exports = (robot) ->
 
       # nothing was replaced, regex didn't match
       if ( replaceText == origText ) 
-        msg.send("#{username}: There is no substitute for trying")
+        msg.send("#{username}: Hmm, that didn't the last message by #{userId}.")
 
       # display new text
       else
